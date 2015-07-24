@@ -1,0 +1,26 @@
+{
+    "apiVersion": "v1",
+    "kind": "BuildConfig",
+    "metadata": {
+        "name": "cassandra"
+    },
+    "spec": {
+        "output": {
+            "to": {
+                "kind": "ImageStreamTag",
+                "name": "cassandra:latest"
+            }
+        },
+        "resources": {},
+        "source": {
+            "git": {
+                "uri": "https://github.com/pat2man/tfly-cassandra.git"
+            },
+            "type": "Git"
+        },
+        "strategy": {
+            "dockerStrategy": {},
+            "type": "Docker"
+        }
+    }
+}
