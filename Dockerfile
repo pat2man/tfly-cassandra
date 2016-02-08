@@ -1,4 +1,4 @@
-FROM gcr.io/google_containers/cassandra:v5
+FROM gcr.io/google_containers/cassandra:v7
 
 RUN chmod a+rw -R /etc/cassandra
 
